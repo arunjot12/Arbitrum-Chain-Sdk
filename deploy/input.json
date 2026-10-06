@@ -1,0 +1,25 @@
+{
+  "parentChainRpcUrl": "https://sepolia.infura.io/v3/e35058a0fe1e4cd0a2491b242c210559",
+  "parentChainId": 11155111,
+  "privateKey": "0x40e7b33960b2fb7d3ba2483cbee4ab0c1c1217496d9c1b1a0a387a0be75fb195",
+
+  "chainName": "PRO-ACTIVE",
+  "createRollupParams": {
+    "batchPosters": ["0x5763F52691341511400f73c023E2a4b1B334949F"],
+    "validators": ["0x1FB13d0f883b6c1Ce63d60043eFe317368AF35fF"],
+    "config": {
+      "chainId": "123456789",
+      "baseStake": "100000000000000000",
+      "chainConfig": {
+        "chainId": 123456789,
+        "arbitrum": { "DataAvailabilityCommittee": false }
+      }
+    }
+  },
+
+  "nodeConfigParams": {
+    "batchPosterPrivateKey": "0x157bd1566409ade940ea3501dd01d003ecafb0ffd16ea05f95221e340a31d6d7",
+    "validatorPrivateKey":   "0xd39068ba11b9f9b043cd0b982c9bcbbc3a497c7c9e60b2461b3075c31cb7234f",
+    "parentChainBeaconRpcUrl": "https://ethereum-sepolia-beacon-api.publicnode.com"
+  }
+}

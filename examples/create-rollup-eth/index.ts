@@ -57,7 +57,7 @@ async function main() {
       chainId,
       arbitrum: {
         InitialChainOwner: deployer.address,
-        DataAvailabilityCommittee: true,
+        DataAvailabilityCommittee: false,
       },
     }),
   });
