@@ -1,0 +1,141 @@
+{
+  "chainName": "PRO-ACTIVE-LOCAL",
+  "chainId": 123456790,
+  "chainConfig": {
+    "chainId": 123456790,
+    "homesteadBlock": 0,
+    "daoForkBlock": null,
+    "daoForkSupport": true,
+    "eip150Block": 0,
+    "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "muirGlacierBlock": 0,
+    "berlinBlock": 0,
+    "londonBlock": 0,
+    "clique": {
+      "period": 0,
+      "epoch": 0
+    },
+    "arbitrum": {
+      "EnableArbOS": true,
+      "AllowDebugPrecompiles": false,
+      "DataAvailabilityCommittee": false,
+      "InitialArbOSVersion": 51,
+      "InitialChainOwner": "0x23fE7A5d6988E34CA6A2c14B6D60B3967aA6DE96",
+      "GenesisBlockNum": 0,
+      "MaxCodeSize": 24576,
+      "MaxInitCodeSize": 49152
+    }
+  },
+  "parentChainId": 1337,
+  "parentChainIsArbitrum": false,
+  "coreContracts": {
+    "rollup": "0xeD5970b8Eee2327D26cee684FBb56E5f22913b93",
+    "inbox": "0x63503e789B791544666CebF3100DdAa4ce74EC23",
+    "nativeToken": "0x0000000000000000000000000000000000000000",
+    "outbox": "0xDd92d0fC943726f75792FE1b921F5219A3d6daE9",
+    "rollupEventInbox": "0xC19EF7CdC38f9B3e400b65e91a06Ce4647BC1D08",
+    "challengeManager": "0x1Fb92F199aac89A54c9c16b12b108D7D1FAF6Cc0",
+    "adminProxy": "0x677f96f2533758c073f205D51FFE78D46A4c1E31",
+    "sequencerInbox": "0xEe4849a9dB5a1545513679E451ce2B3D0dd56eff",
+    "bridge": "0x2349a121C94783D4f43a7c62e776520209F09749",
+    "upgradeExecutor": "0x269439498f3790c2e250f2E342Bbacb5545B5397",
+    "validatorWalletCreator": "0xB25655a694886557fE3c52177c70b058b120e2b1",
+    "deployedAtBlockNumber": 930,
+    "stakeToken": "0x2d13eec32a0AF16A5211A4f8E706bC79f730abde"
+  },
+  "tokenBridgeContracts": {
+    "parentChainContracts": {
+      "router": "0xeADD11f399C7C47b7ce8af7ccd32b3b8aA496244",
+      "standardGateway": "0x6f8A1cD448D11a6F8E939410e1BedD2ace3E8eB4",
+      "customGateway": "0x0a2394A809015a0dCc979F97dEaF729cF75BE6B0",
+      "wethGateway": "0xE29f03c0Db38c59C85aD83C2BB8eA7Da97F51017",
+      "weth": "0x2d13eec32a0AF16A5211A4f8E706bC79f730abde",
+      "multicall": "0x722FB6180a6137e993B5c7F17F5e0DebD7fD2835"
+    },
+    "orbitChainContracts": {
+      "router": "0xE273fDf099f78fE14A13Ae61389c7e9E2473974F",
+      "standardGateway": "0x9641cDB71c7229E5495505EEDddB0CC20aa27975",
+      "customGateway": "0xEb02334E8FC0fF280C3374D2a61Db6Fd0689D23E",
+      "wethGateway": "0x77393bab8D131405Aa6f95193Feb9D92514cbd9f",
+      "weth": "0x3e87E1faCa6761d62059Ffb17Ae86DFdAA5d0430",
+      "proxyAdmin": "0xd9Dbb36DD20a5Abaab60678317e9Db9A883aD8D8",
+      "beaconProxyFactory": "0xC5f77E1496B2C4c7203bAbE7b08CBFA027D85cf0",
+      "upgradeExecutor": "0x5d0A625010c480A1dee5e99A89Bb5c88cCD2CF3b",
+      "multicall": "0xA6A39e8F91D5b9dC04eE21b0197cb21D6C080CA1"
+    }
+  },
+  "nodeConfig": {
+    "chain": {
+      "info-json": "[{\"chain-id\":123456790,\"parent-chain-id\":1337,\"parent-chain-is-arbitrum\":false,\"chain-name\":\"PRO-ACTIVE-LOCAL\",\"chain-config\":{\"chainId\":123456790,\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":51,\"InitialChainOwner\":\"0x23fE7A5d6988E34CA6A2c14B6D60B3967aA6DE96\",\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152}},\"rollup\":{\"bridge\":\"0x2349a121C94783D4f43a7c62e776520209F09749\",\"inbox\":\"0x63503e789B791544666CebF3100DdAa4ce74EC23\",\"sequencer-inbox\":\"0xEe4849a9dB5a1545513679E451ce2B3D0dd56eff\",\"rollup\":\"0xeD5970b8Eee2327D26cee684FBb56E5f22913b93\",\"validator-wallet-creator\":\"0xB25655a694886557fE3c52177c70b058b120e2b1\",\"stake-token\":\"0x2d13eec32a0AF16A5211A4f8E706bC79f730abde\",\"deployed-at\":930}}]",
+      "name": "PRO-ACTIVE-LOCAL"
+    },
+    "parent-chain": {
+      "connection": {
+        "url": "http://localhost:8545"
+      },
+      "blob-client": {
+        "beacon-url": "http://localhost:8545"
+      }
+    },
+    "http": {
+      "addr": "0.0.0.0",
+      "port": 8449,
+      "vhosts": [
+        "*"
+      ],
+      "corsdomain": [
+        "*"
+      ],
+      "api": [
+        "eth",
+        "net",
+        "web3",
+        "arb",
+        "debug"
+      ]
+    },
+    "node": {
+      "sequencer": true,
+      "delayed-sequencer": {
+        "enable": true,
+        "use-merge-finality": false,
+        "finalize-distance": 1
+      },
+      "batch-poster": {
+        "max-calldata-batch-size": 90000,
+        "enable": true,
+        "parent-chain-wallet": {
+          "private-key": "157bd1566409ade940ea3501dd01d003ecafb0ffd16ea05f95221e340a31d6d7"
+        }
+      },
+      "staker": {
+        "enable": true,
+        "strategy": "MakeNodes",
+        "parent-chain-wallet": {
+          "private-key": "d39068ba11b9f9b043cd0b982c9bcbbc3a497c7c9e60b2461b3075c31cb7234f"
+        }
+      },
+      "dangerous": {
+        "no-sequencer-coordinator": true,
+        "disable-blob-reader": false
+      }
+    },
+    "execution": {
+      "forwarding-target": "",
+      "sequencer": {
+        "enable": true,
+        "max-tx-data-size": 85000,
+        "max-block-speed": "250ms"
+      },
+      "caching": {
+        "archive": true
+      }
+    }
+  }
+}

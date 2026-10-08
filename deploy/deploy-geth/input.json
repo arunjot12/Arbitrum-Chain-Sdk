@@ -1,0 +1,41 @@
+{
+  "parentChainRpcUrl": "http://localhost:8545",
+  "parentChainId": 1337,
+  "parentChainName": "Local Geth",
+  "parentChainContracts": {
+    "rollupCreator": "0x8C8B7e8F05DC5F0e229b1B27B47B722Aac2f7F0c",
+    "tokenBridgeCreator": "0x46720410Dcf184c67744F325b11457140eb4fA13",
+    "weth": "0x2d13eec32a0AF16A5211A4f8E706bC79f730abde"
+  },
+  "privateKey": "0x40e7b33960b2fb7d3ba2483cbee4ab0c1c1217496d9c1b1a0a387a0be75fb195",
+  "chainName": "PRO-ACTIVE-LOCAL",
+  "createRollupParams": {
+    "batchPosters": ["0x5763F52691341511400f73c023E2a4b1B334949F"],
+    "validators": ["0x1FB13d0f883b6c1Ce63d60043eFe317368AF35fF"],
+    "maxDataSize": "117964",
+    "config": {
+      "chainId": "123456790",
+      "stakeToken": "0x2d13eec32a0AF16A5211A4f8E706bC79f730abde", 
+      "baseStake": "100000000000000000",
+      "confirmPeriodBlocks": "20",
+       "sequencerInboxMaxTimeVariation": {
+        "delayBlocks": "5760",
+        "futureBlocks": "12",
+        "delaySeconds": "86400",
+        "futureSeconds": "3600"
+      },
+        "validatorAfkBlocks": "201600",
+      "minimumAssertionPeriod": "10",
+     "challengeGracePeriodBlocks": "10",
+      "chainConfig": {
+        "chainId": 123456790,
+        "arbitrum": { "DataAvailabilityCommittee": false }
+      }
+    }
+  },
+  "nodeConfigParams": {
+   "batchPosterPrivateKey": "0x157bd1566409ade940ea3501dd01d003ecafb0ffd16ea05f95221e340a31d6d7",
+    "validatorPrivateKey":   "0xd39068ba11b9f9b043cd0b982c9bcbbc3a497c7c9e60b2461b3075c31cb7234f",
+    "parentChainBeaconRpcUrl": "http://localhost:8545"
+  }
+}

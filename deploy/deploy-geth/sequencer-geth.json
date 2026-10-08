@@ -1,0 +1,62 @@
+{
+  "chain": {
+    "info-json": "[{\"chain-id\":123456790,\"parent-chain-id\":1337,\"parent-chain-is-arbitrum\":false,\"chain-name\":\"PRO-ACTIVE-LOCAL\",\"chain-config\":{\"chainId\":123456790,\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":51,\"InitialChainOwner\":\"0x23fE7A5d6988E34CA6A2c14B6D60B3967aA6DE96\",\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152}},\"rollup\":{\"bridge\":\"0x2349a121C94783D4f43a7c62e776520209F09749\",\"inbox\":\"0x63503e789B791544666CebF3100DdAa4ce74EC23\",\"sequencer-inbox\":\"0xEe4849a9dB5a1545513679E451ce2B3D0dd56eff\",\"rollup\":\"0xeD5970b8Eee2327D26cee684FBb56E5f22913b93\",\"validator-wallet-creator\":\"0xB25655a694886557fE3c52177c70b058b120e2b1\",\"stake-token\":\"0x2d13eec32a0AF16A5211A4f8E706bC79f730abde\",\"deployed-at\":930}}]",
+    "name": "PRO-ACTIVE-LOCAL"
+  },
+  "parent-chain": {
+    "connection": {
+      "url": "http://localhost:8545"
+    }
+  },
+  "http": {
+    "addr": "0.0.0.0",
+    "port": 8451,
+    "vhosts": [
+      "*"
+    ],
+    "corsdomain": [
+      "*"
+    ],
+    "api": [
+      "eth",
+      "net",
+      "web3",
+      "arb",
+      "debug"
+    ]
+  },
+  "node": {
+    "sequencer": true,
+    "delayed-sequencer": {
+      "enable": true,
+      "use-merge-finality": false,
+      "finalize-distance": 1
+    },
+    "batch-poster": {
+      "max-calldata-batch-size": 90000,
+      "enable": true,
+      "parent-chain-wallet": {
+        "private-key": "157bd1566409ade940ea3501dd01d003ecafb0ffd16ea05f95221e340a31d6d7"
+      }
+    },
+    "staker": {
+      "enable": false,
+      "strategy": "MakeNodes"
+    },
+    "dangerous": {
+      "no-sequencer-coordinator": true,
+      "disable-blob-reader": true
+    }
+  },
+  "execution": {
+    "forwarding-target": "",
+    "sequencer": {
+      "enable": true,
+      "max-tx-data-size": 85000,
+      "max-block-speed": "250ms"
+    },
+    "caching": {
+      "archive": true
+    }
+  }
+}

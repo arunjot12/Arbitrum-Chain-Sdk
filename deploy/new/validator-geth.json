@@ -1,0 +1,61 @@
+{
+  "chain": {
+    "info-json": "[{\"chain-id\":123456790,\"parent-chain-id\":1337,\"parent-chain-is-arbitrum\":false,\"chain-name\":\"PRO-ACTIVE-LOCAL\",\"chain-config\":{\"chainId\":123456790,\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":51,\"InitialChainOwner\":\"0x23fE7A5d6988E34CA6A2c14B6D60B3967aA6DE96\",\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152}},\"rollup\":{\"bridge\":\"0x42CeBC7409A7860a20F927081B1EF4bdfD9F47B9\",\"inbox\":\"0x609D6a6DA45731F386C5F17b76E06998c04bdc98\",\"sequencer-inbox\":\"0x1101CC79D171BBd44Dafa6cE0DB7dcd230fA9f36\",\"rollup\":\"0x9f1130f01408ebF1286521B7EA8e9ce2b7cF6659\",\"validator-wallet-creator\":\"0x4073A7Dc5dDF0d9aa50Eff184224c928c4304369\",\"stake-token\":\"0x3A220f351252089D385b29beca14e27F204c296A\",\"deployed-at\":354}}]",
+    "name": "PRO-ACTIVE-LOCAL"
+  },
+  "parent-chain": {
+    "connection": {
+      "url": "http://localhost:8545"
+    }
+  },
+  "http": {
+    "addr": "0.0.0.0",
+    "port": 8552,
+    "vhosts": [
+      "*"
+    ],
+    "corsdomain": [
+      "*"
+    ],
+    "api": [
+      "eth",
+      "net",
+      "web3",
+      "arb",
+      "debug"
+    ]
+  },
+  "node": {
+    "sequencer": false,
+    "delayed-sequencer": {
+      "enable": false,
+      "use-merge-finality": false,
+      "finalize-distance": 1
+    },
+    "batch-poster": {
+      "enable": false
+    },
+    "staker": {
+      "enable": true,
+      "strategy": "MakeNodes",
+      "parent-chain-wallet": {
+        "private-key": "d39068ba11b9f9b043cd0b982c9bcbbc3a497c7c9e60b2461b3075c31cb7234f"
+      }
+    },
+    "dangerous": {
+      "no-sequencer-coordinator": true,
+      "disable-blob-reader": true
+    }
+  },
+  "execution": {
+    "forwarding-target": "http://localhost:8451",
+    "sequencer": {
+      "enable": false,
+      "max-tx-data-size": 85000,
+      "max-block-speed": "250ms"
+    },
+    "caching": {
+      "archive": true
+    }
+  }
+}
